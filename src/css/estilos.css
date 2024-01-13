@@ -1,0 +1,93 @@
+body {
+    background-color: #000000;
+    overflow: hidden; /* overfolw = transbordar --> hidden = escondido */
+}
+/* pseudo-elemento (::) --> estiliza uma parte específica do elemento selecionado*/
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh; /* vh = view-height --> 100% da tela em altura*/
+    width: 80vw; /* vw = view-width --> 800% da tela em largura*/
+
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+main .personagem {
+    display: none; /*none = nenhum --> esconde as imagens */
+}
+
+main .personagem.selecionado {
+    display: block; /*bloqueia a ação do (nome) da imagem */
+    height: 100vh; /*100% para a altura */
+}
+
+main .personagem .imagem {
+    width: 100%; /*100% para a largura */ 
+    height: 100%; /*100% para a altura */
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute; /*coloca o conteudo a cima dos demais */
+    top: 0%;
+    left: 120px; /*espaço a esquerda de 120 pixels */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; /* 100% da tela --> para ter espaço para centralizar*/
+    max-width: 380px;
+    z-index: 1; /* cria uma ordem de prioridade para aparecer --> neste caso só tem 1*/
+}
+
+.conteudo .nome-personagem {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #ffffff;
+    font-family: "Rubik";
+    line-height: 24px;
+}
+/* url(../) --> procura a pasta com a imagem --> neste caso logo*/
+.conteudo .logo {
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover; /* cover = cobrir --> deixa por cima da imagem */
+    height: 100px; /* altura --> sem declarar a altura a imagem pode não aperece */
+    width: 230px; /* largura --> sem declarar a largura imagem pode não aperece */
+    margin-bottom: 35px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* espaçamento quando usa o flex */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+}
+
+.botoes .botao.selecionado{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
+}
