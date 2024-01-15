@@ -1,43 +1,43 @@
 body {
     background-color: #000000;
-    overflow: hidden; /* overfolw = transbordar --> hidden = escondido */
+    overflow: hidden;
 }
-/* pseudo-elemento (::) --> estiliza uma parte específica do elemento selecionado*/
+
 main::after{
     content: "";
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 100vh; /* vh = view-height --> 100% da tela em altura*/
-    width: 80vw; /* vw = view-width --> 800% da tela em largura*/
+    min-height: 100vh;
+    width: 80vw;
 
     background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
 }
 main .personagem {
-    display: none; /*none = nenhum --> esconde as imagens */
+    display: none;
 }
 
 main .personagem.selecionado {
-    display: block; /*bloqueia a ação do (nome) da imagem */
-    height: 100vh; /*100% para a altura */
+    display: block;
+    height: 100vh;
 }
 
 main .personagem .imagem {
-    width: 100%; /*100% para a largura */ 
-    height: 100%; /*100% para a altura */
+    width: 100%; 
+    height: 100%;
     object-fit: cover;
 }
 
 .conteudo {
-    position: absolute; /*coloca o conteudo a cima dos demais */
+    position: absolute;
     top: 0%;
-    left: 120px; /*espaço a esquerda de 120 pixels */
+    left: 120px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh; /* 100% da tela --> para ter espaço para centralizar*/
+    min-height: 100vh; 
     max-width: 380px;
-    z-index: 1; /* cria uma ordem de prioridade para aparecer --> neste caso só tem 1*/
+    z-index: 1; 
 }
 
 .conteudo .nome-personagem {
@@ -53,12 +53,12 @@ main .personagem .imagem {
     font-family: "Rubik";
     line-height: 24px;
 }
-/* url(../) --> procura a pasta com a imagem --> neste caso logo*/
+
 .conteudo .logo {
     background-image: url("../imagens/one-piece-logo.png");
-    background-size: cover; /* cover = cobrir --> deixa por cima da imagem */
-    height: 100px; /* altura --> sem declarar a altura a imagem pode não aperece */
-    width: 230px; /* largura --> sem declarar a largura imagem pode não aperece */
+    background-size: cover; 
+    height: 100px; 
+    width: 230px; 
     margin-bottom: 35px;
 }
 
@@ -72,7 +72,7 @@ main .personagem .imagem {
     width: 180px;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* espaçamento quando usa o flex */
+    gap: 10px; 
     background-color: rgba(0, 0, 0, 0.3);
 }
 
