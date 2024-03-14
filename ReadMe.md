@@ -5,7 +5,7 @@ O Projeto One Piece é uma aplicação simples desenvolvida com HTML, CSS e Java
 One Piece é um dos mangás e animes mais populares do mundo, criado por Eiichiro Oda. O anime segue as aventuras de Monkey D. Luffy e sua tripulação, os Piratas do Chapéu de Palha, em busca do tesouro conhecido como "One Piece". Este projeto apresenta uma breve descrição dos personagens principais da série.
 
 ## 💻 Deploy
-## <a href="https://one-piece-project.netlify.app" target="_blank">Confira o projeto ✔️</a>
+## <a href="https://one-piece-project.netlify.app" target="blank" >Confira o projeto ✔️</a>
 
 https://github.com/IsmaelCastroSantos/One-piece/assets/154548550/d5726e82-27f4-4021-9e18-45df242473df
 
