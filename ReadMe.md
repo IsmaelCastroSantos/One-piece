@@ -18,5 +18,6 @@ https://github.com/IsmaelCastroSantos/One-piece/assets/154548550/d5726e82-27f4-4
         <img align="center" alt="dev-js" height="40" width="50" <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 </div>
 
-## 🔓 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+## 🔓 Licença
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)<br>
 Este projeto é disponibilizado sob a licença MIT. Sinta-se à vontade para usar, modificar e distribuir o código conforme necessário.
